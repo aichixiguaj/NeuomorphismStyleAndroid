@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC">
+
+    <com.aichixigua.neuomorphism.NeuomorphismView
+        android:id="@+id/NEView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/scaleText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center|start"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:text="缩放"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/NEView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SeekBar
+        android:id="@+id/handlePaddingSeek"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/darker_gray"
+        android:max="450"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:progress="80"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scaleText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/radiusText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center|start"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:text="圆角"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/handlePaddingSeek"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SeekBar
+        android:id="@+id/handleRadiusSeek"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/darker_gray"
+        android:max="450"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:progress="150"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiusText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lightAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center|start"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:text="光效透明度"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/handleRadiusSeek"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SeekBar
+        android:id="@+id/lightAlphaSeek"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/darker_gray"
+        android:max="100"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:progress="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lightAlpha"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lightWidth"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center|start"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:text="光效宽度"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/lightAlphaSeek"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SeekBar
+        android:id="@+id/lightWidthSeek"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/darker_gray"
+        android:max="200"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:progress="80"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lightWidth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
